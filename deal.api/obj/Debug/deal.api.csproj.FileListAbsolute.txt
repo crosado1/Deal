@@ -1,0 +1,32 @@
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\obj\Debug\deal.api.csprojResolveAssemblyReference.cache
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\deal.api.dll.config
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\deal.api.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\deal.api.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\deal.service.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\deal.repository.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\deal.model.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\EntityFramework.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\AutoMapper.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\deal.service.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\deal.repository.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\deal.model.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\EntityFramework.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\bin\AutoMapper.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\obj\Debug\deal.api.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.api\obj\Debug\deal.api.pdb
+C:\Users\cr2485\Documents\Deal\deal.api\bin\deal.api.dll.config
+C:\Users\cr2485\Documents\Deal\deal.api\bin\deal.api.dll
+C:\Users\cr2485\Documents\Deal\deal.api\bin\deal.api.pdb
+C:\Users\cr2485\Documents\Deal\deal.api\bin\deal.service.dll
+C:\Users\cr2485\Documents\Deal\deal.api\bin\deal.repository.dll
+C:\Users\cr2485\Documents\Deal\deal.api\bin\deal.model.dll
+C:\Users\cr2485\Documents\Deal\deal.api\bin\EntityFramework.dll
+C:\Users\cr2485\Documents\Deal\deal.api\bin\AutoMapper.dll
+C:\Users\cr2485\Documents\Deal\deal.api\bin\deal.service.pdb
+C:\Users\cr2485\Documents\Deal\deal.api\bin\deal.repository.pdb
+C:\Users\cr2485\Documents\Deal\deal.api\bin\deal.model.pdb
+C:\Users\cr2485\Documents\Deal\deal.api\bin\EntityFramework.xml
+C:\Users\cr2485\Documents\Deal\deal.api\bin\AutoMapper.xml
+C:\Users\cr2485\Documents\Deal\deal.api\obj\Debug\deal.api.csprojResolveAssemblyReference.cache
+C:\Users\cr2485\Documents\Deal\deal.api\obj\Debug\deal.api.dll
+C:\Users\cr2485\Documents\Deal\deal.api\obj\Debug\deal.api.pdb

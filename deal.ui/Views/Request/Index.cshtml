@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Request Deal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Request Deal</h2>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="form-group">
+            @*@Html.Label("Service Type", new { @class = "form-label" })
+            <select class="form-control">
+                <option value="volvo">Buy Car</option>
+                <option value="saab">Mechanic</option>
+                <option value="opel">Electrical Technician</option>
+                <option value="audi">Plumber</option>
+            </select>*@
+                @Html.Label("Service Type", new { @class = "form-label" })
+                @Html.DropDownList("ServiceType", (IEnumerable<SelectListItem>)ViewBag.ServiceTypes, new { @class = "js-example-basic-multiple form-control", @data_placeholder = "All" })
+            </div>
+            <div class="form-group">
+                @Html.Label("Requet to the following City", new { @class = "form-label" })
+                <select class="form-control">
+                    <option value="volvo">Aguada</option>
+                    <option value="saab">Corozal</option>
+                    <option value="opel">Naranjito</option>
+                    <option value="audi">Ponce</option>
+                </select>
+            </div>
+            <div class="form-group">
+                @Html.Label("Budget From", new { @class = "form-label" })
+                <input type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+                @Html.Label("Budget To", new { @class = "form-label" })
+                <input type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="form-group">
+                @Html.Label("Request Comment", new { @class = "form-label" })
+                <textarea cols="10" rows="12" class="form-control"></textarea>
+            </div>
+        </div>
+
+    </div>
+

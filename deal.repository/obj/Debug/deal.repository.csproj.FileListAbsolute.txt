@@ -1,0 +1,24 @@
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\bin\Debug\deal.repository.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\bin\Debug\deal.repository.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\bin\Debug\deal.model.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\bin\Debug\deal.model.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\obj\Debug\deal.repository.csprojResolveAssemblyReference.cache
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\obj\Debug\deal.repository.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\obj\Debug\deal.repository.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\bin\Debug\deal.repository.dll.config
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\bin\Debug\AutoMapper.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\bin\Debug\EntityFramework.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\bin\Debug\AutoMapper.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.repository\bin\Debug\EntityFramework.xml
+C:\Users\cr2485\Documents\Deal\deal.repository\bin\Debug\deal.repository.dll.config
+C:\Users\cr2485\Documents\Deal\deal.repository\bin\Debug\deal.repository.dll
+C:\Users\cr2485\Documents\Deal\deal.repository\bin\Debug\deal.repository.pdb
+C:\Users\cr2485\Documents\Deal\deal.repository\bin\Debug\AutoMapper.dll
+C:\Users\cr2485\Documents\Deal\deal.repository\bin\Debug\deal.model.dll
+C:\Users\cr2485\Documents\Deal\deal.repository\bin\Debug\EntityFramework.dll
+C:\Users\cr2485\Documents\Deal\deal.repository\bin\Debug\deal.model.pdb
+C:\Users\cr2485\Documents\Deal\deal.repository\bin\Debug\AutoMapper.xml
+C:\Users\cr2485\Documents\Deal\deal.repository\bin\Debug\EntityFramework.xml
+C:\Users\cr2485\Documents\Deal\deal.repository\obj\Debug\deal.repository.csprojResolveAssemblyReference.cache
+C:\Users\cr2485\Documents\Deal\deal.repository\obj\Debug\deal.repository.dll
+C:\Users\cr2485\Documents\Deal\deal.repository\obj\Debug\deal.repository.pdb

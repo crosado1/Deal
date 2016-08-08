@@ -1,0 +1,9 @@
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.model\bin\Debug\deal.model.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.model\bin\Debug\deal.model.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.model\obj\Debug\deal.model.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.model\obj\Debug\deal.model.pdb
+C:\Users\cr2485\Documents\Deal\deal.model\bin\Debug\deal.model.dll
+C:\Users\cr2485\Documents\Deal\deal.model\bin\Debug\deal.model.pdb
+C:\Users\cr2485\Documents\Deal\deal.model\obj\Debug\deal.model.csprojResolveAssemblyReference.cache
+C:\Users\cr2485\Documents\Deal\deal.model\obj\Debug\deal.model.dll
+C:\Users\cr2485\Documents\Deal\deal.model\obj\Debug\deal.model.pdb

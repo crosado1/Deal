@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DealOptionModelStoreContainer" CdmEntityContainer="DealOptionEntities">
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="DealOptionModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="companyId" ColumnName="companyId" />
+          <ScalarProperty Name="companyName" ColumnName="companyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyServices">
+      <EntityTypeMapping TypeName="DealOptionModel.CompanyService">
+        <MappingFragment StoreEntitySet="CompanyService">
+          <ScalarProperty Name="companyServiceId" ColumnName="companyServiceId" />
+          <ScalarProperty Name="companySubsidiaryId" ColumnName="companySubsidiaryId" />
+          <ScalarProperty Name="serviceTypeId" ColumnName="serviceTypeId" />
+          <ScalarProperty Name="fromDate" ColumnName="fromDate" />
+          <ScalarProperty Name="toDate" ColumnName="toDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanySubsidiaries">
+      <EntityTypeMapping TypeName="DealOptionModel.CompanySubsidiary">
+        <MappingFragment StoreEntitySet="CompanySubsidiary">
+          <ScalarProperty Name="companySubsidiaryId" ColumnName="companySubsidiaryId" />
+          <ScalarProperty Name="companyId" ColumnName="companyId" />
+          <ScalarProperty Name="stateId" ColumnName="stateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyUsers">
+      <EntityTypeMapping TypeName="DealOptionModel.CompanyUser">
+        <MappingFragment StoreEntitySet="CompanyUser">
+          <ScalarProperty Name="companyUserId" ColumnName="companyUserId" />
+          <ScalarProperty Name="companyId" ColumnName="companyId" />
+          <ScalarProperty Name="userRoleId" ColumnName="userRoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DealResponses">
+      <EntityTypeMapping TypeName="DealOptionModel.DealResponse">
+        <MappingFragment StoreEntitySet="DealResponse">
+          <ScalarProperty Name="dealResponseId" ColumnName="dealResponseId" />
+          <ScalarProperty Name="serviceRequestId" ColumnName="serviceRequestId" />
+          <ScalarProperty Name="responseById" ColumnName="responseById" />
+          <ScalarProperty Name="responseDate" ColumnName="responseDate" />
+          <ScalarProperty Name="responseComment" ColumnName="responseComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="DealOptionModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+          <ScalarProperty Name="roleName" ColumnName="roleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceRequests">
+      <EntityTypeMapping TypeName="DealOptionModel.ServiceRequest">
+        <MappingFragment StoreEntitySet="ServiceRequest">
+          <ScalarProperty Name="serviceRequestId" ColumnName="serviceRequestId" />
+          <ScalarProperty Name="serviceTypeId" ColumnName="serviceTypeId" />
+          <ScalarProperty Name="requestById" ColumnName="requestById" />
+          <ScalarProperty Name="requestDate" ColumnName="requestDate" />
+          <ScalarProperty Name="requestDescription" ColumnName="requestDescription" />
+          <ScalarProperty Name="requestBudgetFrom" ColumnName="requestBudgetFrom" />
+          <ScalarProperty Name="requestBudgetTo" ColumnName="requestBudgetTo" />
+          <ScalarProperty Name="serviceRequestCityId" ColumnName="serviceRequestCityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceRequestStatusTypes">
+      <EntityTypeMapping TypeName="DealOptionModel.ServiceRequestStatusType">
+        <MappingFragment StoreEntitySet="ServiceRequestStatusType">
+          <ScalarProperty Name="serviceRequestStatusTypeId" ColumnName="serviceRequestStatusTypeId" />
+          <ScalarProperty Name="serviceRequestId" ColumnName="serviceRequestId" />
+          <ScalarProperty Name="requestStatusTypeId" ColumnName="requestStatusTypeId" />
+          <ScalarProperty Name="fromDate" ColumnName="fromDate" />
+          <ScalarProperty Name="toDate" ColumnName="toDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceTypes">
+      <EntityTypeMapping TypeName="DealOptionModel.ServiceType">
+        <MappingFragment StoreEntitySet="ServiceType">
+          <ScalarProperty Name="serviceTypeId" ColumnName="serviceTypeId" />
+          <ScalarProperty Name="serviceTypeDescription" ColumnName="serviceTypeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="States">
+      <EntityTypeMapping TypeName="DealOptionModel.State">
+        <MappingFragment StoreEntitySet="State">
+          <ScalarProperty Name="stateId" ColumnName="stateId" />
+          <ScalarProperty Name="stateDescription" ColumnName="stateDescription" />
+          <ScalarProperty Name="stateLetter" ColumnName="stateLetter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StateCities">
+      <EntityTypeMapping TypeName="DealOptionModel.StateCity">
+        <MappingFragment StoreEntitySet="StateCity">
+          <ScalarProperty Name="stateCityId" ColumnName="stateCityId" />
+          <ScalarProperty Name="stateId" ColumnName="stateId" />
+          <ScalarProperty Name="cityDescription" ColumnName="cityDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="DealOptionModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="userFirstName" ColumnName="userFirstName" />
+          <ScalarProperty Name="userLastName" ColumnName="userLastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="DealOptionModel.UserRole">
+        <MappingFragment StoreEntitySet="UserRole">
+          <ScalarProperty Name="userRoleId" ColumnName="userRoleId" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+          <ScalarProperty Name="fromDate" ColumnName="fromDate" />
+          <ScalarProperty Name="toDate" ColumnName="toDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserStateLocations">
+      <EntityTypeMapping TypeName="DealOptionModel.UserStateLocation">
+        <MappingFragment StoreEntitySet="UserStateLocation">
+          <ScalarProperty Name="userStateLocationId" ColumnName="userStateLocationId" />
+          <ScalarProperty Name="userRoleId" ColumnName="userRoleId" />
+          <ScalarProperty Name="stateId" ColumnName="stateId" />
+          <ScalarProperty Name="active" ColumnName="active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

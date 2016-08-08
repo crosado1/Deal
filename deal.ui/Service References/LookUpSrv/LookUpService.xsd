@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetAll_ServiceType">
+    <xs:complexType />
+  </xs:element>
+  <xs:element name="GetAll_ServiceTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetAll_ServiceTypeResult" type="tns:ServiceResponseWithResultsetOfServiceTypeModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ServiceResponseWithResultsetOfServiceTypeModel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Data" type="tns:ArrayOfServiceTypeModel" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TotalRecords" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ServiceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Response" type="tns:ServiceResponses" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Reason" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ServiceResponses">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="Failure" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ArrayOfServiceTypeModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ServiceTypeModel" nillable="true" type="tns:ServiceTypeModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ServiceTypeModel">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="ServiceTypeId" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ServiceTypeDescription" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

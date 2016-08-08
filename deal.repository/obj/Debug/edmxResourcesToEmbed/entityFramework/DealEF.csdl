@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DealOptionModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="companyId" />
+    </Key>
+    <Property Name="companyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="companyName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CompanySubsidiaries" Relationship="Self.FK_CompanySubsidiary_Company" FromRole="Company" ToRole="CompanySubsidiary" />
+    <NavigationProperty Name="CompanyUsers" Relationship="Self.FK_CompanyUser_Company" FromRole="Company" ToRole="CompanyUser" />
+  </EntityType>
+  <EntityType Name="CompanyService">
+    <Key>
+      <PropertyRef Name="companyServiceId" />
+    </Key>
+    <Property Name="companyServiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="companySubsidiaryId" Type="Int32" Nullable="false" />
+    <Property Name="serviceTypeId" Type="Int32" Nullable="false" />
+    <Property Name="fromDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="toDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CompanySubsidiary" Relationship="Self.FK_CompanyService_CompanySubsidiary" FromRole="CompanyService" ToRole="CompanySubsidiary" />
+    <NavigationProperty Name="ServiceType" Relationship="Self.FK_CompanyService_ServiceType" FromRole="CompanyService" ToRole="ServiceType" />
+  </EntityType>
+  <EntityType Name="CompanySubsidiary">
+    <Key>
+      <PropertyRef Name="companySubsidiaryId" />
+    </Key>
+    <Property Name="companySubsidiaryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="companyId" Type="Int32" Nullable="false" />
+    <Property Name="stateId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_CompanySubsidiary_Company" FromRole="CompanySubsidiary" ToRole="Company" />
+    <NavigationProperty Name="CompanyServices" Relationship="Self.FK_CompanyService_CompanySubsidiary" FromRole="CompanySubsidiary" ToRole="CompanyService" />
+  </EntityType>
+  <EntityType Name="CompanyUser">
+    <Key>
+      <PropertyRef Name="companyUserId" />
+    </Key>
+    <Property Name="companyUserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="companyId" Type="Int32" Nullable="false" />
+    <Property Name="userRoleId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_CompanyUser_Company" FromRole="CompanyUser" ToRole="Company" />
+    <NavigationProperty Name="UserRole" Relationship="Self.FK_CompanyUser_UserRole" FromRole="CompanyUser" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="DealResponse">
+    <Key>
+      <PropertyRef Name="dealResponseId" />
+    </Key>
+    <Property Name="dealResponseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="serviceRequestId" Type="Int32" Nullable="false" />
+    <Property Name="responseById" Type="Int32" Nullable="false" />
+    <Property Name="responseDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="responseComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ServiceRequest" Relationship="Self.FK_DealResponse_ServiceRequest" FromRole="DealResponse" ToRole="ServiceRequest" />
+    <NavigationProperty Name="UserRole" Relationship="Self.FK_DealResponse_UserRole" FromRole="DealResponse" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="roleId" />
+    </Key>
+    <Property Name="roleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="roleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="UserRoles" Relationship="Self.FK_UserRole_Role" FromRole="Role" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="ServiceRequest">
+    <Key>
+      <PropertyRef Name="serviceRequestId" />
+    </Key>
+    <Property Name="serviceRequestId" Type="Int32" Nullable="false" />
+    <Property Name="serviceTypeId" Type="Int32" Nullable="false" />
+    <Property Name="requestById" Type="Int32" Nullable="false" />
+    <Property Name="requestDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="requestDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="requestBudgetFrom" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="requestBudgetTo" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="serviceRequestCityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DealResponses" Relationship="Self.FK_DealResponse_ServiceRequest" FromRole="ServiceRequest" ToRole="DealResponse" />
+    <NavigationProperty Name="ServiceType" Relationship="Self.FK_ServiceRequest_ServiceType" FromRole="ServiceRequest" ToRole="ServiceType" />
+    <NavigationProperty Name="StateCity" Relationship="Self.FK_ServiceRequest_StateCity" FromRole="ServiceRequest" ToRole="StateCity" />
+    <NavigationProperty Name="UserRole" Relationship="Self.FK_ServiceRequest_UserRole" FromRole="ServiceRequest" ToRole="UserRole" />
+    <NavigationProperty Name="ServiceRequestStatusTypes" Relationship="Self.FK_ServiceRequestStatusType_ServiceRequest" FromRole="ServiceRequest" ToRole="ServiceRequestStatusType" />
+  </EntityType>
+  <EntityType Name="ServiceRequestStatusType">
+    <Key>
+      <PropertyRef Name="serviceRequestStatusTypeId" />
+    </Key>
+    <Property Name="serviceRequestStatusTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="serviceRequestId" Type="Int32" Nullable="false" />
+    <Property Name="requestStatusTypeId" Type="Int32" Nullable="false" />
+    <Property Name="fromDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="toDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ServiceRequest" Relationship="Self.FK_ServiceRequestStatusType_ServiceRequest" FromRole="ServiceRequestStatusType" ToRole="ServiceRequest" />
+  </EntityType>
+  <EntityType Name="ServiceType">
+    <Key>
+      <PropertyRef Name="serviceTypeId" />
+    </Key>
+    <Property Name="serviceTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="serviceTypeDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CompanyServices" Relationship="Self.FK_CompanyService_ServiceType" FromRole="ServiceType" ToRole="CompanyService" />
+    <NavigationProperty Name="ServiceRequests" Relationship="Self.FK_ServiceRequest_ServiceType" FromRole="ServiceType" ToRole="ServiceRequest" />
+  </EntityType>
+  <EntityType Name="State">
+    <Key>
+      <PropertyRef Name="stateId" />
+    </Key>
+    <Property Name="stateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="stateDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="stateLetter" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="StateCities" Relationship="Self.FK_StateCity_State" FromRole="State" ToRole="StateCity" />
+    <NavigationProperty Name="UserStateLocations" Relationship="Self.FK_UserStateLocation_State" FromRole="State" ToRole="UserStateLocation" />
+  </EntityType>
+  <EntityType Name="StateCity">
+    <Key>
+      <PropertyRef Name="stateCityId" />
+    </Key>
+    <Property Name="stateCityId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="stateId" Type="Int32" Nullable="false" />
+    <Property Name="cityDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ServiceRequests" Relationship="Self.FK_ServiceRequest_StateCity" FromRole="StateCity" ToRole="ServiceRequest" />
+    <NavigationProperty Name="State" Relationship="Self.FK_StateCity_State" FromRole="StateCity" ToRole="State" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="userId" />
+    </Key>
+    <Property Name="userId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userFirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="userLastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="UserRoles" Relationship="Self.FK_UserRole_User" FromRole="User" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="userRoleId" />
+    </Key>
+    <Property Name="userRoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userId" Type="Int32" Nullable="false" />
+    <Property Name="roleId" Type="Int32" Nullable="false" />
+    <Property Name="fromDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="toDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CompanyUsers" Relationship="Self.FK_CompanyUser_UserRole" FromRole="UserRole" ToRole="CompanyUser" />
+    <NavigationProperty Name="DealResponses" Relationship="Self.FK_DealResponse_UserRole" FromRole="UserRole" ToRole="DealResponse" />
+    <NavigationProperty Name="Role" Relationship="Self.FK_UserRole_Role" FromRole="UserRole" ToRole="Role" />
+    <NavigationProperty Name="ServiceRequests" Relationship="Self.FK_ServiceRequest_UserRole" FromRole="UserRole" ToRole="ServiceRequest" />
+    <NavigationProperty Name="User" Relationship="Self.FK_UserRole_User" FromRole="UserRole" ToRole="User" />
+    <NavigationProperty Name="UserStateLocations" Relationship="Self.FK_UserStateLocation_UserRole" FromRole="UserRole" ToRole="UserStateLocation" />
+  </EntityType>
+  <EntityType Name="UserStateLocation">
+    <Key>
+      <PropertyRef Name="userStateLocationId" />
+    </Key>
+    <Property Name="userStateLocationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userRoleId" Type="Int32" Nullable="false" />
+    <Property Name="stateId" Type="Int32" Nullable="false" />
+    <Property Name="active" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="State" Relationship="Self.FK_UserStateLocation_State" FromRole="UserStateLocation" ToRole="State" />
+    <NavigationProperty Name="UserRole" Relationship="Self.FK_UserStateLocation_UserRole" FromRole="UserStateLocation" ToRole="UserRole" />
+  </EntityType>
+  <Association Name="FK_CompanySubsidiary_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="CompanySubsidiary" Type="Self.CompanySubsidiary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="companyId" />
+      </Principal>
+      <Dependent Role="CompanySubsidiary">
+        <PropertyRef Name="companyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyUser_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="CompanyUser" Type="Self.CompanyUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="companyId" />
+      </Principal>
+      <Dependent Role="CompanyUser">
+        <PropertyRef Name="companyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyService_CompanySubsidiary">
+    <End Role="CompanySubsidiary" Type="Self.CompanySubsidiary" Multiplicity="1" />
+    <End Role="CompanyService" Type="Self.CompanyService" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanySubsidiary">
+        <PropertyRef Name="companySubsidiaryId" />
+      </Principal>
+      <Dependent Role="CompanyService">
+        <PropertyRef Name="companySubsidiaryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyService_ServiceType">
+    <End Role="ServiceType" Type="Self.ServiceType" Multiplicity="1" />
+    <End Role="CompanyService" Type="Self.CompanyService" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceType">
+        <PropertyRef Name="serviceTypeId" />
+      </Principal>
+      <Dependent Role="CompanyService">
+        <PropertyRef Name="serviceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyUser_UserRole">
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="1" />
+    <End Role="CompanyUser" Type="Self.CompanyUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="userRoleId" />
+      </Principal>
+      <Dependent Role="CompanyUser">
+        <PropertyRef Name="userRoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DealResponse_ServiceRequest">
+    <End Role="ServiceRequest" Type="Self.ServiceRequest" Multiplicity="1" />
+    <End Role="DealResponse" Type="Self.DealResponse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceRequest">
+        <PropertyRef Name="serviceRequestId" />
+      </Principal>
+      <Dependent Role="DealResponse">
+        <PropertyRef Name="serviceRequestId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DealResponse_UserRole">
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="1" />
+    <End Role="DealResponse" Type="Self.DealResponse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="userRoleId" />
+      </Principal>
+      <Dependent Role="DealResponse">
+        <PropertyRef Name="responseById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRole_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="roleId" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="roleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceRequest_ServiceType">
+    <End Role="ServiceType" Type="Self.ServiceType" Multiplicity="1" />
+    <End Role="ServiceRequest" Type="Self.ServiceRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceType">
+        <PropertyRef Name="serviceTypeId" />
+      </Principal>
+      <Dependent Role="ServiceRequest">
+        <PropertyRef Name="serviceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceRequest_StateCity">
+    <End Role="StateCity" Type="Self.StateCity" Multiplicity="1" />
+    <End Role="ServiceRequest" Type="Self.ServiceRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StateCity">
+        <PropertyRef Name="stateCityId" />
+      </Principal>
+      <Dependent Role="ServiceRequest">
+        <PropertyRef Name="serviceRequestCityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceRequest_UserRole">
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="1" />
+    <End Role="ServiceRequest" Type="Self.ServiceRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="userRoleId" />
+      </Principal>
+      <Dependent Role="ServiceRequest">
+        <PropertyRef Name="requestById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceRequestStatusType_ServiceRequest">
+    <End Role="ServiceRequest" Type="Self.ServiceRequest" Multiplicity="1" />
+    <End Role="ServiceRequestStatusType" Type="Self.ServiceRequestStatusType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceRequest">
+        <PropertyRef Name="serviceRequestId" />
+      </Principal>
+      <Dependent Role="ServiceRequestStatusType">
+        <PropertyRef Name="serviceRequestId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StateCity_State">
+    <End Role="State" Type="Self.State" Multiplicity="1" />
+    <End Role="StateCity" Type="Self.StateCity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="stateId" />
+      </Principal>
+      <Dependent Role="StateCity">
+        <PropertyRef Name="stateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserStateLocation_State">
+    <End Role="State" Type="Self.State" Multiplicity="1" />
+    <End Role="UserStateLocation" Type="Self.UserStateLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="stateId" />
+      </Principal>
+      <Dependent Role="UserStateLocation">
+        <PropertyRef Name="stateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRole_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="userId" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserStateLocation_UserRole">
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="1" />
+    <End Role="UserStateLocation" Type="Self.UserStateLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="userRoleId" />
+      </Principal>
+      <Dependent Role="UserStateLocation">
+        <PropertyRef Name="userRoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DealOptionEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Companies" EntityType="Self.Company" />
+    <EntitySet Name="CompanyServices" EntityType="Self.CompanyService" />
+    <EntitySet Name="CompanySubsidiaries" EntityType="Self.CompanySubsidiary" />
+    <EntitySet Name="CompanyUsers" EntityType="Self.CompanyUser" />
+    <EntitySet Name="DealResponses" EntityType="Self.DealResponse" />
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+    <EntitySet Name="ServiceRequests" EntityType="Self.ServiceRequest" />
+    <EntitySet Name="ServiceRequestStatusTypes" EntityType="Self.ServiceRequestStatusType" />
+    <EntitySet Name="ServiceTypes" EntityType="Self.ServiceType" />
+    <EntitySet Name="States" EntityType="Self.State" />
+    <EntitySet Name="StateCities" EntityType="Self.StateCity" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRole" />
+    <EntitySet Name="UserStateLocations" EntityType="Self.UserStateLocation" />
+    <AssociationSet Name="FK_CompanySubsidiary_Company" Association="Self.FK_CompanySubsidiary_Company">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="CompanySubsidiary" EntitySet="CompanySubsidiaries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyUser_Company" Association="Self.FK_CompanyUser_Company">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="CompanyUser" EntitySet="CompanyUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyService_CompanySubsidiary" Association="Self.FK_CompanyService_CompanySubsidiary">
+      <End Role="CompanySubsidiary" EntitySet="CompanySubsidiaries" />
+      <End Role="CompanyService" EntitySet="CompanyServices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyService_ServiceType" Association="Self.FK_CompanyService_ServiceType">
+      <End Role="ServiceType" EntitySet="ServiceTypes" />
+      <End Role="CompanyService" EntitySet="CompanyServices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyUser_UserRole" Association="Self.FK_CompanyUser_UserRole">
+      <End Role="UserRole" EntitySet="UserRoles" />
+      <End Role="CompanyUser" EntitySet="CompanyUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DealResponse_ServiceRequest" Association="Self.FK_DealResponse_ServiceRequest">
+      <End Role="ServiceRequest" EntitySet="ServiceRequests" />
+      <End Role="DealResponse" EntitySet="DealResponses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DealResponse_UserRole" Association="Self.FK_DealResponse_UserRole">
+      <End Role="UserRole" EntitySet="UserRoles" />
+      <End Role="DealResponse" EntitySet="DealResponses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRole_Role" Association="Self.FK_UserRole_Role">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="UserRole" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceRequest_ServiceType" Association="Self.FK_ServiceRequest_ServiceType">
+      <End Role="ServiceType" EntitySet="ServiceTypes" />
+      <End Role="ServiceRequest" EntitySet="ServiceRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceRequest_StateCity" Association="Self.FK_ServiceRequest_StateCity">
+      <End Role="StateCity" EntitySet="StateCities" />
+      <End Role="ServiceRequest" EntitySet="ServiceRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceRequest_UserRole" Association="Self.FK_ServiceRequest_UserRole">
+      <End Role="UserRole" EntitySet="UserRoles" />
+      <End Role="ServiceRequest" EntitySet="ServiceRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceRequestStatusType_ServiceRequest" Association="Self.FK_ServiceRequestStatusType_ServiceRequest">
+      <End Role="ServiceRequest" EntitySet="ServiceRequests" />
+      <End Role="ServiceRequestStatusType" EntitySet="ServiceRequestStatusTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StateCity_State" Association="Self.FK_StateCity_State">
+      <End Role="State" EntitySet="States" />
+      <End Role="StateCity" EntitySet="StateCities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserStateLocation_State" Association="Self.FK_UserStateLocation_State">
+      <End Role="State" EntitySet="States" />
+      <End Role="UserStateLocation" EntitySet="UserStateLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRole_User" Association="Self.FK_UserRole_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserRole" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserStateLocation_UserRole" Association="Self.FK_UserStateLocation_UserRole">
+      <End Role="UserRole" EntitySet="UserRoles" />
+      <End Role="UserStateLocation" EntitySet="UserStateLocations" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

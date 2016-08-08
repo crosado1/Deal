@@ -1,0 +1,142 @@
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\csc.exe
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\System.Collections.Immutable.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\vbc.exe
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\VBCSCompiler.exe
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\roslyn\VBCSCompiler.exe.config
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\deal.ui.dll.config
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\deal.ui.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\deal.ui.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Antlr3.Runtime.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\EntityFramework.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\EntityFramework.SqlServer.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.Google.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Web.Infrastructure.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Newtonsoft.Json.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Owin.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.Helpers.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.Mvc.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.Optimization.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.Razor.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.WebPages.Deployment.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.WebPages.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.WebPages.Razor.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\WebGrease.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.Helpers.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.Mvc.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.Optimization.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.Razor.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.WebPages.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.WebPages.Deployment.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\System.Web.WebPages.Razor.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Antlr3.Runtime.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Newtonsoft.Json.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\EntityFramework.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\EntityFramework.SqlServer.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.Google.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\obj\Debug\deal.ui.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\obj\Debug\deal.ui.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\deal.model.dll
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\bin\deal.model.pdb
+c:\users\cr2485\documents\visual studio 2015\Projects\dealOptions\deal.ui\obj\Debug\deal.ui.csprojResolveAssemblyReference.cache
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\csc.exe
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\vbc.exe
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\VBCSCompiler.exe
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\deal.ui.dll.config
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\deal.ui.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\deal.ui.pdb
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Antlr3.Runtime.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\deal.model.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\EntityFramework.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\EntityFramework.SqlServer.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Newtonsoft.Json.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Owin.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.Helpers.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.Mvc.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.Optimization.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.Razor.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.WebPages.Deployment.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.WebPages.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.WebPages.Razor.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\WebGrease.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\deal.model.pdb
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.Helpers.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.Mvc.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.Optimization.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.Razor.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.WebPages.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.WebPages.Deployment.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\System.Web.WebPages.Razor.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Antlr3.Runtime.pdb
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Newtonsoft.Json.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\EntityFramework.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\EntityFramework.SqlServer.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\cr2485\Documents\Deal\deal.ui\obj\Debug\deal.ui.csprojResolveAssemblyReference.cache
+C:\Users\cr2485\Documents\Deal\deal.ui\obj\Debug\deal.ui.dll
+C:\Users\cr2485\Documents\Deal\deal.ui\obj\Debug\deal.ui.pdb

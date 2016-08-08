@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f98f23652f814ff3b39437f27e90d3b8" Name="Diagram1">
+        <EntityTypeShape EntityType="DealOptionModel.Company" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.CompanyService" Width="1.5" PointX="8.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.CompanySubsidiary" Width="1.5" PointX="5.25" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.CompanyUser" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.DealResponse" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.Role" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.ServiceRequest" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.ServiceRequestStatusType" Width="1.5" PointX="10.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.ServiceType" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.State" Width="1.5" PointX="3.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.StateCity" Width="1.5" PointX="6" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.User" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.UserRole" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DealOptionModel.UserStateLocation" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="DealOptionModel.FK_CompanySubsidiary_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_CompanyUser_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_CompanyService_CompanySubsidiary" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_CompanyService_ServiceType" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_CompanyUser_UserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_DealResponse_ServiceRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_DealResponse_UserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_UserRole_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_ServiceRequest_ServiceType" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_ServiceRequest_StateCity" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_ServiceRequest_UserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_ServiceRequestStatusType_ServiceRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_StateCity_State" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_UserStateLocation_State" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_UserRole_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DealOptionModel.FK_UserStateLocation_UserRole" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

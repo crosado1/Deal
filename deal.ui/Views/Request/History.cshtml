@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "History";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Request Deal History</h2>
+<link href="~/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
+<link href="~/Content/DataTables/css/dataTables.bootstrap.css" rel="stylesheet" />
+<link href="~/Content/DataTables/css/responsive.bootstrap.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-md-12">
+        <table id="example" class="table table-striped table-hover dt-responsive" cellspacing="0" width="90%">
+            <thead>
+                <tr>                    
+                    <th>Service Type</th>
+                    <th>Request Status</th>
+                    <th>Request Date</th>
+                    <th>Service City</th>
+                    <th>Budget From</th>
+                    <th>Budget To</th>
+                    <th>Request Comment</th>
+                    <th>Responses</th>                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Buy Car</td>
+                    <td>Done</td>
+                    <td>01/01/2015</td>
+                    <td>Naranjito</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                    <td>
+                        <textarea rows="3" class="form-control">Solicito un Auto Acura TSX 2013</textarea>
+                    </td>
+                    <td>
+                        <button class="btn btn-success">Responses</button>
+                    </td>                   
+                </tr>
+                <tr>
+                    <td>Electrical Technician</td>
+                    <td>Waiting for Service</td>
+                    <td>01/01/2016</td>
+                    <td>Naranjito</td>
+                    <td>$ 50.00</td>
+                    <td>$ 100.00</td>
+                    <td>
+                        <textarea rows="3" class="form-control">Solicitando un Electricista para arreglar plomero</textarea>
+                    </td>
+                    <td>
+                        <button class="btn btn-success">Responses</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Buy Car</td>
+                    <td>In Progress</td>
+                    <td>01/01/2016</td>
+                    <td>Naranjito</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                    <td>
+                        <textarea rows="3" class="form-control">Solicito un Auto Toyota Camry</textarea>
+                    </td>
+                    <td>
+                        <button class="btn btn-success">Responses</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
+    </script>
+
